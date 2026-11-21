@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MonEntreprise - Accueil</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-boxes me-2"></i>MonEntreprise</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Basculer la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="equipe.html">Équipe</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero-section text-center">
+    <div class="container">
+      <h1 class="fw-bold mb-3">Votre partenaire digital de confiance</h1>
+      <p class="fs-5 mb-4">Nous accompagnons les entreprises dans leur transformation numérique avec des solutions modernes et sur-mesure.</p>
+      <a href="services.html" class="btn btn-primary btn-lg me-2">Nos services</a>
+      <a href="contact.html" class="btn btn-outline-light btn-lg">Nous contacter</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= PRÉSENTATION ================= -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-6">
+            <img src="https://picsum.photos/seed/entreprise/700/500" class="img-fluid rounded-4 shadow" alt="Présentation de l'entreprise">
+          </div>
+          <div class="col-12 col-lg-6">
+            <h2 class="mb-3">Qui sommes-nous ?</h2>
+            <p class="text-secondary">
+              Depuis notre création, MonEntreprise aide les organisations à concevoir des sites web
+              modernes, responsives et performants. Notre équipe combine expertise technique et sens
+              du design pour livrer des projets qui font la différence.
+            </p>
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#plusInfos" aria-expanded="false" aria-controls="plusInfos">
+              En savoir plus
+            </button>
+            <div class="collapse mt-3" id="plusInfos">
+              <div class="card card-body">
+                Nous intervenons sur toute la chaîne de valeur digitale : conception UX/UI, développement
+                front-end et back-end, hébergement et maintenance. Notre méthode agile garantit des livraisons
+                rapides et un accompagnement personnalisé à chaque étape du projet.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= APERÇU SERVICES ================= -->
+    <section class="py-5 section-alt">
+      <div class="container">
+        <h2 class="text-center mb-5">Nos domaines d'expertise</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://picsum.photos/seed/service1/500/300" class="card-img-top" alt="Développement web">
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Populaire</span>
+                <h5 class="card-title">Développement Web</h5>
+                <p class="card-text">Sites vitrines et applications web modernes, rapides et responsives.</p>
+                <a href="services.html" class="btn btn-primary btn-sm">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://picsum.photos/seed/service2/500/300" class="card-img-top" alt="Design UX/UI">
+              <div class="card-body">
+                <h5 class="card-title">Design UX/UI</h5>
+                <p class="card-text">Des interfaces claires, ergonomiques et pensées pour vos utilisateurs.</p>
+                <a href="services.html" class="btn btn-primary btn-sm">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://picsum.photos/seed/service3/500/300" class="card-img-top" alt="Référencement SEO">
+              <div class="card-body">
+                <h5 class="card-title">Référencement SEO</h5>
+                <p class="card-text">Optimisation de votre visibilité sur les moteurs de recherche.</p>
+                <a href="services.html" class="btn btn-primary btn-sm">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="services.html" class="btn btn-outline-primary">Voir tous nos services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATISTIQUES ================= -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">MonEntreprise en chiffres</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-4 text-center mb-5">
+          <div class="col">
+            <div class="card stat-card h-100 p-3 bg-primary text-white">
+              <i class="bi bi-people-fill mb-2"></i>
+              <h3 class="fw-bold mb-0">250+</h3>
+              <p class="mb-0">Clients satisfaits</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card stat-card h-100 p-3 bg-success text-white">
+              <i class="bi bi-kanban-fill mb-2"></i>
+              <h3 class="fw-bold mb-0">180+</h3>
+              <p class="mb-0">Projets réalisés</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card stat-card h-100 p-3 bg-warning text-dark">
+              <i class="bi bi-person-badge-fill mb-2"></i>
+              <h3 class="fw-bold mb-0">35</h3>
+              <p class="mb-0">Employés</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card stat-card h-100 p-3 bg-info text-white">
+              <i class="bi bi-handshake-fill mb-2"></i>
+              <h3 class="fw-bold mb-0">40+</h3>
+              <p class="mb-0">Partenaires</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barres de progression : satisfaction par domaine -->
+        <div class="row">
+          <div class="col-12 col-lg-8 mx-auto">
+            <p class="mb-1">Satisfaction Développement Web</p>
+            <div class="progress mb-3" style="height: 1rem;">
+              <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+            </div>
+            <p class="mb-1">Satisfaction Design UX/UI</p>
+            <div class="progress mb-3" style="height: 1rem;">
+              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+            </div>
+            <p class="mb-1">Satisfaction Support Client</p>
+            <div class="progress" style="height: 1rem;">
+              <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 88%">88%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TÉMOIGNAGES (Carousel) ================= -->
+    <section class="py-5 section-alt">
+      <div class="container">
+        <h2 class="text-center mb-5">Ce que disent nos clients</h2>
+        <div id="carouselTemoignages" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="card p-4 text-center">
+                    <img src="https://picsum.photos/seed/client1/100/100" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Photo cliente">
+                    <p class="fst-italic">« Une équipe très professionnelle qui a parfaitement compris nos besoins. Le site livré dépasse nos attentes. »</p>
+                    <div class="etoiles mb-2">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <h6 class="mb-0 fw-bold">Aïssatou Diallo</h6>
+                    <small class="text-secondary">Directrice Marketing</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="card p-4 text-center">
+                    <img src="https://picsum.photos/seed/client2/100/100" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Photo client">
+                    <p class="fst-italic">« Délais respectés, communication fluide et un résultat visuellement impeccable. Je recommande vivement. »</p>
+                    <div class="etoiles mb-2">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    </div>
+                    <h6 class="mb-0 fw-bold">Moussa Ndiaye</h6>
+                    <small class="text-secondary">Fondateur, StartUp Dakar</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="card p-4 text-center">
+                    <img src="https://picsum.photos/seed/client3/100/100" class="rounded-circle mx-auto mb-3" width="80" height="80" alt="Photo cliente">
+                    <p class="fst-italic">« Un vrai gain de temps pour notre entreprise. L'équipe est réactive et de très bon conseil. »</p>
+                    <div class="etoiles mb-2">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <h6 class="mb-0 fw-bold">Fatou Sow</h6>
+                    <small class="text-secondary">Responsable Communication</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTemoignages" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTemoignages" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold"><i class="bi bi-boxes me-2"></i>MonEntreprise</h5>
+          <p class="text-secondary">Nous concevons des sites web modernes, responsives et professionnels pour développer votre activité.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <h6 class="fw-bold">Liens rapides</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Accueil</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="galerie.html" class="footer-link">Galerie</a></li>
+            <li><a href="equipe.html" class="footer-link">Équipe</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h6 class="fw-bold">Suivez-nous</h6>
+          <a href="#" class="text-light me-3 fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-light fs-5"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <p class="text-center text-secondary mb-0 small">&copy; 2026 MonEntreprise. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
